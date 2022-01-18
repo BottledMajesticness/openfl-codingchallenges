@@ -1,5 +1,5 @@
-import Bitmap from "openfl/lib/openfl/display/Bitmap";
-import BitmapData from "openfl/lib/openfl/display/BitmapData";
+import Bitmap from "openfl/display/Bitmap";
+import BitmapData from "openfl/display/BitmapData";
 import Sprite from "openfl/display/Sprite";
 import Stage from "openfl/display/Stage";
 
