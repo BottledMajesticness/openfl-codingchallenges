@@ -1,3 +1,5 @@
+import Bitmap from "openfl/lib/openfl/display/Bitmap";
+import BitmapData from "openfl/lib/openfl/display/BitmapData";
 import Sprite from "openfl/display/Sprite";
 import Stage from "openfl/display/Stage";
 
@@ -9,7 +11,10 @@ class App extends Sprite {
 		
 		super ();
 		
-		
+		BitmapData.loadFromFile("openfl.png").onComplete((bitmapData) => {
+			var bitmap = new Bitmap(bitmapData);
+			this.addChild(bitmap);
+		})
 		
 	}
 	
@@ -17,5 +22,5 @@ class App extends Sprite {
 }
 
 
-var stage = new Stage (550, 400, 0xFFFFFF, App);
+var stage = new Stage (550, 400, 0x151515, App);
 document.body.appendChild (stage.element);
