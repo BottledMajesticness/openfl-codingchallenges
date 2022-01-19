@@ -12,8 +12,6 @@ class App extends Sprite {
 		BitmapData.loadFromFile("openfllogo.png").onComplete((bitmapData) => {
 			var bitmap = new Bitmap(bitmapData);
 			this.addChild(bitmap);
-
-			let increment = -0.5;
 		});	
 	}
 }
