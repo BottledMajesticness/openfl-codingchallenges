@@ -1,5 +1,3 @@
-import Bitmap from "openfl/lib/openfl/display/Bitmap";
-import BitmapData from "openfl/lib/openfl/display/BitmapData";
 import Sprite from "openfl/display/Sprite";
 import Stage from "openfl/display/Stage";
 import Timer from "openfl/utils/Timer";
