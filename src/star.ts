@@ -15,17 +15,17 @@ export default class Star {
     }
 
     reset() {
-        this.x = Math.random() * 400;
-        this.y = Math.random() * 400;
+        this.x = Math.random() * 400 - 200;
+        this.y = Math.random() * 400 - 200;
         this.z = Math.random() * 400;
 
-        this.sx = scale(this.x / this.z, 0, 1, 0, 400);
-        this.sy = scale(this.y / this.z, 0, 1, 0, 400);
+        this.sx = scale(this.x / this.z, -1, 1, 0, 400);
+        this.sy = scale(this.y / this.z, -1, 1, 0, 400);
     }
 
     move(speed: number): void {
-        this.sx = scale(this.x / this.z, 0, 1, 0, 400);
-        this.sy = scale(this.y / this.z, 0, 1, 0, 400);
+        this.sx = scale(this.x / this.z, -1, 1, 0, 400);
+        this.sy = scale(this.y / this.z, -1, 1, 0, 400);
         this.z = this.z - speed;
     }
 }

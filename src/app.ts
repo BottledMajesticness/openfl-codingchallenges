@@ -38,8 +38,8 @@ class App extends Sprite {
 
 			for (let i = 0; i < stars.length; i++) {
 				if (stars[i].sx > 0 && stars[i].sx < 400 && stars[i].sy > 0 && stars[i].sy < 400) {
-					stars[i].move(0.1);
-					sprite.graphics.drawCircle(stars[i].sx, stars[i].sy, 3)
+					stars[i].move(1);
+					sprite.graphics.drawCircle(stars[i].sx, stars[i].sy, 400/stars[i].z)
 				} else {
 					stars[i].reset();
 				}
