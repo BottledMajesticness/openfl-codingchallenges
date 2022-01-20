@@ -5,22 +5,16 @@ import Stage from "openfl/display/Stage";
 
 
 class App extends Sprite {
-	
-	
-	constructor () {
-		
-		super ();
-		
+	constructor() {
+		super();
+
 		BitmapData.loadFromFile("openfl.png").onComplete((bitmapData) => {
 			var bitmap = new Bitmap(bitmapData);
 			this.addChild(bitmap);
 		})
-		
 	}
-	
-	
 }
 
 
-var stage = new Stage (550, 400, 0x151515, App);
-document.body.appendChild (stage.element);
+var stage = new Stage(550, 400, 0x151515, App);
+document.body.appendChild(stage.element);
